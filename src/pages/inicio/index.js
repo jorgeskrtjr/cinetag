@@ -1,13 +1,15 @@
-import Cabecalho from "components/Cabecalho"
-import Rodape from "components/Rodape"
+import Banner from "components/Banner";
+import Cabecalho from "components/Cabecalho";
+import Rodape from "components/Rodape";
 
-function inicio() {
+function Inicio() {
     return (
         <>
-            <Cabecalho></Cabecalho>
-            <Rodape></Rodape>
+            <Cabecalho />
+            <Banner imagem="home"/>
+            <Rodape/>
         </>
     )
 }
 
-export default inicio
+export default Inicio;

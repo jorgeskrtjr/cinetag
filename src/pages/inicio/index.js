@@ -1,8 +1,6 @@
 import styles from './Inicio.module.css'
 
 import Banner from "components/Banner";
-import Cabecalho from "components/Cabecalho";
-import Rodape from "components/Rodape";
 import Titulo from "components/Titulo";
 import Card from "components/Card";
 import videos from "json/db.json"
@@ -10,7 +8,6 @@ import videos from "json/db.json"
 function Inicio() {
     return (
         <>
-            <Cabecalho />
             <Banner imagem="home"/>
             <Titulo> <h1>Um lugar para guarda seus vídeos e filmes !</h1> </Titulo>
             <section className={styles.container}>
@@ -20,7 +17,6 @@ function Inicio() {
                     })
                 }
             </section>
-            <Rodape/>
         </>
     )
 }

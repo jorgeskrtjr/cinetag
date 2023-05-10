@@ -14,10 +14,8 @@ function Favoritos() {
             <Banner imagem="favoritos" />
             <Titulo> <h1>Aqui está os seus filmes favoritos !</h1> </Titulo>
             <section className={styles.container}>
-                {favorito.map((fav) => {
-                    
-                    return <Card {...fav} className={styles.item} key={fav.id} />
-                    
+                {favorito.map((fav) => {          
+                    return <Card {...fav} key={fav.id} />       
                 })}
             </section>
         </>
